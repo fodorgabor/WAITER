@@ -7,14 +7,13 @@ def beker():
     return lista
 
 def kiir(ossz):
-    print(ossz,)
+    print(ossz)
     
 #Főprogram
 #Input
 osszegek=beker()
 
 #Számolás 
-
 
 #Output
 kiir(osszegek)
