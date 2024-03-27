@@ -1,3 +1,4 @@
+#Alprogramok
 def beker():
     lista=[]
     with open ("adatok.txt","r",encoding="UTF-8") as fm:
@@ -5,4 +6,15 @@ def beker():
             lista.append(sor)
     return lista
 
-adatok=beker()
+def kiir(ossz):
+    print({ossz})
+    
+#Főprogram
+#Input
+osszegek=beker()
+
+#Számolás 
+
+
+#Output
+kiir(osszegek)
