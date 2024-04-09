@@ -41,13 +41,21 @@ def kivalasztas2(l):
             utolso_tiznelt=i
     return utolso_tiznelt
 
-def kiir(ossz,o_v_m,h_p_o,l_a_sz,h_e_f_k,u_t_t):
+def osszegez3(l):
+    db=0
+    for _ in range(len(osszegek)):
+        db+=1
+    fizetes=db*0.5
+    return fizetes+sum(osszegek)
+
+def kiir(ossz,o_v_m,h_p_o,l_a_sz,h_e_f_k,u_t_t,a_h_f):
     print(ossz)
     print(f"{o_v_m} van benne az óra végén")
     print(f"{h_p_o} pennyt kapott összesen.")
     print(f"{l_a_sz} állt a legnagyobb számlán, amit fizettek a pincérnél.")
-    print(f"{h_e_f_k}. vendég fizetett 9 fontot.")
+    print(f"{h_e_f_k}.  vendég fizetett 9 fontot.")
     print(f"{u_t_t}. vendég volt az utolsó, aki tíz fontnál többet fizetett.")  
+    print(f"{a_h_f} bevétellel zárta az órát.")
 
 #Főprogram
 #Input
@@ -57,7 +65,8 @@ hany_penny_osszesen=osszegez2(osszegek)
 legnagyobb_a_szamlan=kereses(osszegek)
 hanyadik_ember_fizetett_kilencet=kivalasztas1(osszegek)
 utolso_tiznel_tobb=kivalasztas2(osszegek)
+adott_hozza_fel=osszegez3(osszegek)
 #Számolás 
 
 #Output
-kiir(osszegek,ora_vegen_mennyi,hany_penny_osszesen,legnagyobb_a_szamlan,hanyadik_ember_fizetett_kilencet,utolso_tiznel_tobb)
+kiir(osszegek,ora_vegen_mennyi,hany_penny_osszesen,legnagyobb_a_szamlan,hanyadik_ember_fizetett_kilencet,utolso_tiznel_tobb,adott_hozza_fel)
