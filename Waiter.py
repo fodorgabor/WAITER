@@ -91,7 +91,7 @@ def eldontes3(o):
 
     return volt
 
-  def kiir(ossz,o_v_m,h_p_o,l_a_sz,h_e_f_k,u_t_t,a_h_f,b,d,f,h,j,j_volt_e,l):):
+  def kiir(ossz,o_v_m,h_p_o,l_a_sz,h_e_f_k,u_t_t,a_h_f,b,d,f,h,j,j_volt_e,l):
     print(ossz)
     if b:
         print("Volt olyan, hogy a pincér valamit vett.")
